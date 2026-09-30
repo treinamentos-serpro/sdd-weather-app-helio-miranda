@@ -19,7 +19,7 @@ function formatTemperature(temperatureC: number | null, unit: Unit): string {
   });
   const symbol = unit === 'celsius' ? '°C' : '°F';
 
-  return `${number}${symbol}`;
+  return `${number}${symbol}`; 
 }
 
 export default function ForecastCard({ day, dayIndex, unit }: ForecastCardProps) {
